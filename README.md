@@ -131,7 +131,6 @@ Further analysis could improve the RMSE and trimming method.
 │   ├── EDA_baseline_model_and_finalized_model_selection.ipynb
 │   ├── data_preparation.py
 │   └── visualizations.py
-├── data
 ├── images
 ├── README.md
 ├── amazon_recommender_system.ipynb
