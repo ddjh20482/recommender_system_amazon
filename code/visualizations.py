@@ -30,14 +30,14 @@ def result_1(review_dist):
 
 def result_2(list_5):
     
-    fig, ax = plt.subplots(figsize=(8, 8))
+    fig, ax = plt.subplots(figsize=(10, 10))
 
     ax.scatter(list_5.user[list_5.p_value <= 0.05], 
                list_5.p_value[list_5.p_value <= 0.05], 
                color = 'tab:red')
     ax.scatter(list_5.user[list_5.p_value > 0.05], 
                list_5.p_value[list_5.p_value > 0.05], 
-               color = 'tab:blue')
+               color = 'silver')
 
     ax.set_title("P-value Distribution", fontsize=30)
     plt.xlim([0, 100])
