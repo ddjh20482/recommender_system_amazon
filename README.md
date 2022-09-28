@@ -70,7 +70,7 @@ The RMSE for the final model is lowered.
 This step will make a comparison between predicted ratings and given ratings on 500 randomly selected customers. Each customer will have a unique list of video games, and each video game will be assigned with a mean given rating (popularity) and a predicted rating. T-test will be used to make a comparison of two rating types, and p-values less than 0.05 will prove the difference of two rating types.
 
 # Result 1 - P-values
-- Most p-values are populated below 0.05.
+- Majority of p-values are populated below 0.05.
 
 ![p_value_dist](./images/p_value_dist.png)
 
@@ -81,7 +81,7 @@ The number of customers with significantly low p-values:
 
 # Analysis 3 - Hybrid Filtering
 
-The graph below shows one of the extreme cases where one user can have more than 15,000 predicted rating values equal to or close to 5. This would be tough to choose 20 to 30 games to be displayed on the first page of a personalized recommendation list. In this case, we can use [hybrid filtering](https://towardsdatascience.com/recommendation-systems-explained-a42fc60591ed#:~:text=Resources-,What%20is%20a%20Recommendation%20System,give%20to%20a%20specific%20item.). Hybrid filtering can use any combination of filtering methods, but I have used two methods combined in this analysis. One of the two is collaborative filtering discussed in the earlier section. The other is to check similarity. Using a similarity value that scales from 0 to one, we can find items similar to one of the selected games.
+The graph below shows one of the extreme cases where one user can have more than 15,000 predicted rating values equal to or close to 5. This would be tough to choose 20 to 30 games to be displayed on the first page of a personalized recommendation list. In this case, we can use [hybrid filtering](https://towardsdatascience.com/recommendation-systems-explained-a42fc60591ed#:~:text=Resources-,What%20is%20a%20Recommendation%20System,give%20to%20a%20specific%20item.). Hybrid filtering can use any combination of recommendation systems, and I have used two systems combined in this analysis. One of the two is collaborative filtering system discussed in the earlier section. The other is to use content-based system (similarity). Using a similarity value that scales from 0 to one, we can find items similar to one of the selected games.
 
 ![exp_rating_one_customer](./images/exp_rating_one_customer.png)
 
@@ -129,6 +129,7 @@ Further analysis could improve the RMSE and trimming method.
 ├── code
 │   ├── __init__.py
 │   ├── EDA_baseline_model_and_finalized_model_selection.ipynb
+│   ├── EDA_basic_cleaning.ipynb
 │   ├── data_preparation.py
 │   └── visualizations.py
 ├── images
