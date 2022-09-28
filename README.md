@@ -79,6 +79,7 @@ This step will make a comparison between predicted ratings and given ratings on 
 The number of customers with significantly low p-values:
 311
 
+
 # Analysis 3 - Hybrid Filtering
 
 The graph below shows one of the extreme cases where one user can have more than 15,000 predicted rating values equal to or close to 5. This would be tough to choose 20 to 30 games to be displayed on the first page of a personalized recommendation list. In this case, we can use [hybrid filtering](https://towardsdatascience.com/recommendation-systems-explained-a42fc60591ed#:~:text=Resources-,What%20is%20a%20Recommendation%20System,give%20to%20a%20specific%20item.). Hybrid filtering can use any combination of recommendation systems, and I have used two systems combined in this analysis. One of the two is collaborative filtering system discussed in the earlier section. The other is to use content-based system (similarity). Using a similarity value that scales from 0 to one, we can find items similar to one of the selected games.
