@@ -77,7 +77,7 @@ This step will make a comparison between predicted ratings and given ratings on 
 - More than 60% of customers would have different shopping experience.
 
 The number of customers with significantly low p-values:
-301
+311
 
 # Analysis 3 - Hybrid Filtering
 
